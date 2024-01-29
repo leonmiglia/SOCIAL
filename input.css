@@ -4,9 +4,6 @@
 
 @layer base {
     .settings-voice {
-        @apply py-2 pl-2 pr-10 rounded-xl hover:bg-violet-900 flex;
-    }
-    #sidebar {
-        @apply pt-16 pb-10 px-5 rounded-bl-lg bg-violet-950 absolute right-0 top-0 ;
+        @apply py-2 pl-2 pr-10 rounded-xl hover:bg-violet-900 flex dark:hover:bg-indigo-500;
     }
 }
