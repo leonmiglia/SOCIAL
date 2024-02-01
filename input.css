@@ -6,4 +6,16 @@
     .settings-voice {
         @apply py-2 pl-2 pr-10 rounded-xl cursor-pointer hover:bg-violet-900 flex dark:hover:bg-indigo-500;
     }
+    .profile-picture {
+        @apply rounded-full w-16 h-16 mr-2 border-2 border-violet-950 bg-cover bg-center dark:border-indigo-950;
+    }
+    .post {
+        @apply w-full p-4 rounded-md shadow-md shadow-violet-300 dark:bg-indigo-100 dark:shadow-none;
+    }
+    .no-like {
+        @apply w-6 cursor-pointer text-violet-950 dark:text-indigo-950;
+    }
+    .like {
+        @apply w-6 cursor-pointer text-red-600 absolute top-0 animate-like;
+    }
 }

@@ -1,10 +1,15 @@
-const notLike = document.getElementById('no-like');
-const like = document.getElementById('like');
+const notLikeIcons = document.querySelectorAll('.no-like');
+const likeIcons = document.querySelectorAll('.like');
 
-notLike.addEventListener("click", ()=> {
-    like.classList.remove('hidden');
+notLikeIcons.forEach((notLikeIcon) => {
+    notLikeIcon.addEventListener("click", ()=> {
+        const likeIcon = notLikeIcon.nextElementSibling;
+        likeIcon.classList.remove('hidden');
+    });
 });
 
-like.addEventListener("click", ()=> {
-    like.classList.add('hidden');
+likeIcons.forEach((likeIcon) => {
+    likeIcon.addEventListener("click", ()=> {
+        likeIcon.classList.add('hidden');
+    });
 });
